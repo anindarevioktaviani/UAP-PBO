@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="uapbo.KategoriOutputController">
+  <children>
+    <Label layoutX="14.0" layoutY="14.0" text="Kategori Produk">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <TableView fx:id="Tkategori" layoutX="14.0" layoutY="69.0" prefHeight="249.0" prefWidth="562.0">
+      <columns>
+        <TableColumn prefWidth="289.3333435058594" text="Nama Produk" fx:id="TBNama" />
+        <TableColumn prefWidth="271.33331298828125" text="Kategori" fx:id="TBKategori" />
+      </columns>
+    </TableView>
+    <Button fx:id="btnKembali" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" onAction="#kembali" text="Kembali" />
+    <Button fx:id="btnDelete" layoutX="448.0" layoutY="344.0" mnemonicParsing="false" onAction="#delete" text="Hapus Kategori" />
+    <Line endX="499.0" endY="-2.0" layoutX="101.0" layoutY="53.0" startX="-100.0" />
+  </children>
+</AnchorPane>
